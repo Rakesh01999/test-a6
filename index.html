@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro-Forum</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="md:container md:mx-auto">
+        <!-- navbar -->
+        <nav class="">
+            <div class="navbar bg-base-100 ">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>edit</a></li>
+                            <li><a>add</a></li>
+                            <li><a>flag</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl lg:text-4xl">ReTro</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <div class="tooltip tooltip-bottom" data-tip="home">
+                            <button class="btn bg-white border-none rounded-full"><img class="h-10"
+                                    src="images/home.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip tooltip-bottom" data-tip="edit">
+                            <button class="btn bg-white border-none rounded-full"><img class="h-10"
+                                    src="images/edit.png" alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip tooltip-bottom" data-tip="add">
+                            <button class="btn bg-white border-none rounded-full"><img class="h-10" src="images/add.png"
+                                    alt="">
+                            </button>
+                        </div>
+                        <div class="tooltip tooltip-bottom" data-tip="flag">
+                            <button class="btn bg-white border-none rounded-full"><img class="h-10"
+                                    src="images/flag.png" alt="">
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+                <div class="gap-6 ml-6">
+                    <button class="btn bg-[#797DFC] w-[147px] h-[56px] rounded-full text-white text-[20px]">Sign
+                        In</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <div class="w-[335px] h-[200px] lg:w-full lg:h-[550px] ">
+
+
+            <!-- <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                </div> -->
+
+            <div id="" class="bg-[#12132D] rounded-3xl h-[550px] relative w-full">
+                <img class="w-full " src="Images/bgbanner.png" />
+                <div class="absolute flex px-20 justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="h-[352px] w-[1070px] mx-auto my-auto flex ">
+                        <div class="w-[500px] flex flex-col ">
+                            <h3 class="text-[64px] text-white font-extrabold">Welcome to the <span
+                                    class="text-[#797DFC]">ReTro</span> Forum</h3>
+                            <p class="text-[20px] font-bold">Share your favorite opinion and win and wp forum coffee
+                                mug!</p>
+                            <label
+                                class="input input-bordered rounded-full flex items-center mt-4 gap-2 w-[400px] h-[56px]">
+                                <input type="text" class="grow" placeholder="Search here anything" />
+                                <button
+                                    class="btn btn-primary bg-[#797DFC] w-[123px] h-[44px] rounded-full text-[20px] text-white">Search</button>
+                            </label>
+                        </div>
+                        <div class="w-[451px] h-[288px] bg-white rounded-3xl my-20 ml-20 pl-24 py-10 text-[24px] ">
+                            <div class="grid grid-cols-2 flex justify-between  ">
+                                <p class="">Registered Users</p>
+                                <p>01</p>
+                            </div>
+                            <div class="grid grid-cols-2 justify-between mt-5">
+                                <p>Forum</p>
+                                <p>02</p>
+                            </div>
+                            <div class="grid grid-cols-2 justify-between mt-5">
+                                <p>Topics</p>
+                                <p>03</p>
+                            </div>
+                            <div class="grid grid-cols-2 justify-between mt-5">
+                                <p>Replies</p>
+                                <p>04</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+
+        <!-- dashed line -->
+        <div class="relative flex pt-20 items-center w-[335px] h-[1px] md:container md:mx-auto">
+            <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+            <div class="flex-grow border-t border-dashed border-gray-400"></div>
+        </div>
+
+        <!-- Let’s Discuss section -->
+        <section class="md:container md:mx-auto mb-24">
+            <div class="my-8">
+                <div class="md:w-full ">
+                    <div class="flex flex-col lg:flex-col justify-center items-center text-[10px]  m-10">
+                        <h3 class="text-4xl font-extrabold text-[#131318] text-center w-[292px] md:w-[500px]">
+                            Let’s Discuss
+                        </h3>
+                        <p class="mt-6 text-center text-[16px] w-[292px] md:w-[607px]">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated
+                            testing features allow for a streamlined .
+                        </p>
+                        <div class="flex gap-6">
+                            <!-- discuss card container -->
+                            <div>
+                                <div id="post-container" class="grid grid-cols-1  gap-4">
+                                </div>
+                            </div>
+                            <!-- add title container -->
+                            <div>
+                                <div class="w-[380px] bg-[#12132D0D] flex justify-between">
+                                    <h3 class="text-[20px] font-bold">Title</h3>
+                                    <div class="flex gap-4">
+                                        <img src="images/right.png" alt="">
+                                    <p class="text-[16px]">Mark as read ( <span id="read">0 </span> ) </p>
+                                    </div>    
+                                </div>
+                                <div id="title-container">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- dashed line -->
+                <div class="relative flex pt-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+                    <div class="flex-grow border-t border-dashed border-gray-400"></div>
+                </div>
+
+                <!-- join our forum -->
+                <!-- dark container -->
+                <div class="w-[1170px] h-[403px] bg-[#12132D] rounded-3xl md:container md:mx-auto my-24">
+                    <div class="flex gap-6 p-24">
+                        <div class="w-[653px] h-[214px] flex flex-col gap-4">
+                            <h3 class="text-[40px] font-extrabold text-white">Join Our Forum</h3>
+                            <p class="text-[18px] font-bold text-[#FFFFFFCC]">Share your favorite opinion and win and wp
+                                forum coffee mug! Yes, you can run unit tests and view the results directly within the
+                                app. </p>
+                            <button
+                                class="btn bg-[#797DFC] w-[235px] border-none rounded-full text-center text-white">Registered
+                                Now</button>
+                        </div>
+                        <div class="w-[388.79px] h-[341.99px]">
+                            <img class="h-[300px] w-[400px]" src="images/joinforum.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- dashed line -->
+        <div class="relative flex pt-20 items-center w-[335px] h-[1px] md:container md:mx-auto">
+            <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+            <div class="flex-grow border-t border-dashed border-gray-400"></div>
+        </div>
+
+        <!-- Latest Posts section -->
+        <!-- <section class="mx-36 mb-32"> -->
+        <section class="md:container md:mx-auto">
+
+            <div class=" mt-8">
+                <!-- text div -->
+                <div class="flex flex-col text-[10px] ">
+                    <h3 class="text-4xl font-extrabold text-center">Latest Posts</h3>
+                    <p class="m-6 text-[16px] text-center">
+                        Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                        features allow for a streamlined .
+                    </p>
+                </div>
+                <!-- latest post container -->
+                <div>
+                    <div>
+                        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                            <figure><img src="" alt="post pic" /></figure>
+                            <div class="card-body">
+                                <div class="flex">
+                                    <img src="images/date.png" alt="">
+                                    <p></p>
+                                </div>
+                                <h2 class="card-title text-[18px] font-bold">What will a mars habitat force that impact
+                                    in our daily life!!!
+                                </h2>
+                                <p>Yes, you can run unit tests and view the results directly within the app. </p>
+                                <div class="flex">
+                                    <img src="" alt="">
+                                    <div>
+                                        <h2 class="text-[16px] font-bold">Cameron Williamson</h2>
+                                        <p>Unknown</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dashed line -->
+                <div class="relative flex pt-8 pb-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+                    <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+                    <div class="flex-grow border-t border-dashed border-gray-400"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <!-- <div
+            class="md:container md:mx-auto grid footer px-32 pb-32 pt-24 text-neutral-content w-[335] h-[869px] md:w-[1440px] md:h-[454px]">
+        </div> -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <nav class="grid grid-col gap-6">
+            <h3 class="text-[36px] font-extrabold">ReTro</h3>
+            <p class="w-[604px]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC</p>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <a class="link">
+                    <img src="images/tweet.png" alt="">
+                </a>
+                <a class="link">
+                    <img src="images/fb.png" alt="">
+                </a>
+                <a class="link">
+                    <img src="images/insta.png" alt="">
+                </a>
+                <a class="link">
+                    <img src="images/git.png" alt="">
+                </a>
+
+            </div>
+        </nav>
+        <div class="relative flex pt-8 pb-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+            <div class="flex-grow border-t border-dashed border-gray-400"></div>
+        </div>
+        <aside>
+            <p>2017, All Rights Reserved.</p>
+        </aside>
+    </footer>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+</body>
+
+</html>
